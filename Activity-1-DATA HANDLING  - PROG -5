@@ -1,0 +1,10 @@
+activity <- c("Video Games", "Reading", "Cooking", "Painting", "Music")
+
+percent <- c(20, 35, 20, 10, 25)
+
+pie(
+  percent,
+  labels = paste(activity, percent, "%"),
+  col = rainbow(5),
+  main = "Employees' Weekend Activities"
+)

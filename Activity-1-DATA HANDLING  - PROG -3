@@ -1,0 +1,29 @@
+# Program 3: Favourite Fruit Bar Chart
+
+# Fruit names
+fruit <- c("Apple", "Banana", "Mango", "Orange", "Grapes")
+
+# Number of participants
+count <- c(20, 12, 25, 18, 10)
+
+# Draw Bar Chart
+barplot(
+  count,
+  names.arg = fruit,
+  col = c("red", "yellow", "orange", "darkorange", "purple"),
+  main = "Favourite Fruit Survey",
+  xlab = "Fruits",
+  ylab = "Number of Participants"
+)
+
+# Find most preferred fruit
+most <- fruit[which.max(count)]
+most_count <- max(count)
+
+# Find least preferred fruit
+least <- fruit[which.min(count)]
+least_count <- min(count)
+
+# Display results
+cat("Most Preferred Fruit:", most, "-", most_count, "participants\n")
+cat("Least Preferred Fruit:", least, "-", least_count, "participants\n")

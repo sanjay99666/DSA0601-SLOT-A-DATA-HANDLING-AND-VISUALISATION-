@@ -1,0 +1,20 @@
+# Grade Distribution
+
+grades <- c("A", "B", "C", "D", "E")
+students <- c(5, 8, 10, 5, 2)
+
+barplot(
+  students,
+  names.arg = grades,
+  col = "skyblue",
+  main = "Grade Distribution of 30 Students",
+  xlab = "Grades",
+  ylab = "Number of Students"
+)
+
+# Average score using midpoint of each range
+scores <- c(95, 85, 75, 65, 50)
+
+average <- sum(scores * students) / sum(students)
+
+cat("Average Score =", average)

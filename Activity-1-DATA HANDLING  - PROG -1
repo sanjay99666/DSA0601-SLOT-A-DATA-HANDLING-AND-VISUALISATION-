@@ -1,0 +1,21 @@
+# Household Budget Distribution
+
+# Categories
+category <- c("Housing", "Transportation", "Food", "Entertainment")
+
+# Percentage of spending
+spending <- c(40, 20, 30, 10)
+
+# Draw Pie Chart
+pie(
+  spending,
+  labels = paste(category, spending, "%"),
+  col = c("lightblue", "lightgreen", "orange", "pink"),
+  main = "Household Budget Distribution"
+)
+
+# Calculate Weighted Average
+weights <- spending / 100
+weighted_average <- sum(spending * weights)
+
+cat("Weighted Average Spending =", weighted_average, "%\n")

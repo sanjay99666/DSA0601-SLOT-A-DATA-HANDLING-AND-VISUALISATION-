@@ -1,0 +1,12 @@
+department <- c("Marketing", "Sales", "HR", "Finance", "IT")
+percent <- c(25, 30, 15, 10, 20)
+
+pie(
+  percent,
+  labels = paste(department, percent, "%"),
+  col = rainbow(5),
+  main = "Employee Distribution by Department"
+)
+
+marketing <- 200 * 25 / 100
+cat("Employees in Marketing =", marketing)
